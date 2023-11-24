@@ -1,29 +1,36 @@
+// Define updateClock function
 function updateClock() {
+  // Get current date and time
   let now = new Date();
-  let hour = now.getHours() % 12; // 12-Stunden-Format
+
+  // Calculate hours, minutes, and seconds
+  let hour = now.getHours() % 12; // 12 hours format
   let minute = now.getMinutes();
   let second = now.getSeconds();
 
+  // Select hour, minute, and second hands
   let hourHand = document.querySelector(".hour-hand");
   let minuteHand = document.querySelector(".min-hand");
   let secondHand = document.querySelector(".second-hand");
 
+  // Calculate degrees for each hand
   let hourDeg = (360 / 12) * hour;
   let minuteDeg = (360 / 60) * minute;
   let secondDeg = (360 / 60) * second;
 
+  // Rotate each hand to the corresponding degrees
   hourHand.style.transform = `rotate(${hourDeg}deg)`;
   minuteHand.style.transform = `rotate(${minuteDeg}deg)`;
   secondHand.style.transform = `rotate(${secondDeg}deg)`;
-  7;
-}
 
+  // Update clock every second
+}
 setInterval(updateClock, 1000);
 
-// Initialer Aufruf, um die Uhrzeit sofort anzuzeigen
+// start of the updateClock function
 updateClock();
 
-let hourDayorNight = 20; //date.getHours();
+let hourDayorNight = date.getHours();
 
 if (hourDayorNight >= 7 && hourDayorNight <= 19) {
   document.querySelector("html").style.backgroundColor = "#ffffff"; // Daymode: White Background, Black Clock
