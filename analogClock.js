@@ -3,12 +3,12 @@
 // Define updateClock function
 function updateClock() {
   // Get current date and time
-  let now = new Date();
+  let date = new Date();
 
   // Calculate hours, minutes, and seconds
-  let hour = now.getHours() % 12; // 12 hours format
-  let minute = now.getMinutes();
-  let second = now.getSeconds();
+  let hour = date.getHours() % 12; // 12 hours format
+  let minute = date.getMinutes();
+  let second = date.getSeconds();
 
   // Select hour, minute, and second hands
   let hourHand = document.querySelector(".hour-hand");
