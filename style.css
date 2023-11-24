@@ -15,40 +15,41 @@ body {
 	position: relative;
 	width: 200px;
 	height: 200px;
-	border: 2px solid black;
+	border: 3px solid black;
 	border-radius: 50%;
 }
 
 .hour-hand,
 .min-hand,
 .second-hand {
-  position: absolute;
-  background-color: black;
+	position: absolute;
+	background-color: black;
 
-  transform: rotate(90deg); /* Drehung um 90 Grad, um am unteren Rand zu starten */
+	transform: rotate(90deg);
+	/* Drehung um 90 Grad, um am unteren Rand zu starten */
 }
 
 .hour-hand {
-  width: 8px;
-  height: 60px;
-  top: calc(50% - 58px);
-  left: 49%;
+	width: 6px;
+	height: 60px;
+	top: calc(50% - 58px);
+	left: 40%;
 	transform-origin: 50% 100%;
 }
 
 .min-hand {
-  	width: 4px;
-  	height: 80px;
- 	top: calc(50% - 80px);
-  	left: 34%;
+	width: 4px;
+	height: 80px;
+	top: calc(50% - 80px);
+	left: 34%;
 	transform-origin: 50% 100%;
 }
 
 .second-hand {
-  	width: 2px;
-  	height: 90px;
-  	top: calc(50% - 90px);
-  	left: 50%;
+	width: 2px;
+	height: 90px;
+	top: calc(50% - 90px);
+	left: 50%;
 	transform-origin: 50% 100%;
 }
 
@@ -62,42 +63,46 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.marking-one{
+
+.marking-one {
 	position: absolute;
-		background-color: black;
-		width: 2px;
-		height: 10px;
-		top: 0.1%;
-		left: 50%;
-		transform-origin: 50% 100%;
+	background-color: black;
+	width: 3px;
+	height: 10px;
+	top: 0.55%;
+	left: 50%;
+	transform-origin: 50% 100%;
 }
+
 .marking-two {
 	position: absolute;
 	background-color: black;
-	width: 2px;
+	width: 3px;
 	height: 10px;
 	top: 45%;
-	left: 95%;
+	left: -0.8%;
 	transform-origin: 50% 100%;
 	transform: rotate(90deg);
 }
+
 .marking-three {
 	position: absolute;
 	background-color: black;
-	width: 2px;
+	width: 3px;
 	height: 10px;
-	top: 90%;
+	top: 95%;
 	left: 50%;
 	transform-origin: 50% 100%;
-	transform: rotate(180deg);
 }
+
+/* Viertelstundenmarkierungen */
 .marking-four {
 	position: absolute;
 	background-color: black;
-	width: 2px;
+	width: 3px;
 	height: 10px;
 	top: 45%;
-	left: 4.9%;
+	left: 100%;
 	transform-origin: 50% 100%;
 	transform: rotate(270deg);
 }
