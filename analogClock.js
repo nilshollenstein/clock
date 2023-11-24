@@ -23,12 +23,22 @@ setInterval(updateClock, 1000);
 // Initialer Aufruf, um die Uhrzeit sofort anzuzeigen
 updateClock();
 
-let hourDayorNight = date.getHours() % 24;
+let hourDayorNight = 20; //date.getHours();
 
 if (hourDayorNight >= 7 && hourDayorNight <= 19) {
-  document.body.style.backgroundColor = "#ffffff"; // Daymode: White Background, Black Clock
-  document.documentElement.style.backgroundColor = "#000000";
+  document.querySelector("html").style.backgroundColor = "#ffffff"; // Daymode: White Background, Black Clock
+  document.querySelector("html").style.color = "#000000";
 } else {
-  document.body.style.backgroundColor = "#000000"; // Nightmode: Black Background, White Clock
-  document.documentElement.style.backgroundColor = "#ffffff";
+  document.querySelector("html").style.backgroundColor = "#000000"; // Nightmode: Black Background, White Clock
+  //color inner and outer face
+  document.querySelector(".inner-clock-face").style.backgroundColor = "#fff";
+  document.querySelector(".outer-clock-face").style.borderColor = "#ffffff";
+  //color markings and hands
+
+  document.querySelectorAll(".marking").forEach((element) => {
+    element.style.backgroundColor = "#fff";
+  });
+  document.querySelectorAll(".hand").forEach((element) => {
+    element.style.backgroundColor = "#fff";
+  });
 }

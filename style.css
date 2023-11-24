@@ -19,12 +19,24 @@ body {
 	border-radius: 50%;
 }
 
+.inner-clock-face {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
 .hour-hand,
 .min-hand,
 .second-hand {
 	position: absolute;
 	background-color: black;
-
+	border-radius: 30%;
 	transform: rotate(90deg);
 	/* Drehung um 90 Grad, um am unteren Rand zu starten */
 }
@@ -53,16 +65,7 @@ body {
 	transform-origin: 50% 100%;
 }
 
-.inner-clock-face {
-	position: absolute;
-	width: 12px;
-	height: 12px;
-	background-color: black;
-	border-radius: 50%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
+
 
 .marking-one {
 	position: absolute;
