@@ -13,8 +13,8 @@ body {
 
 .outer-clock-face {
 	position: relative;
-	width: 60vh;
-	height: 60vh;
+	width: 200px;
+	height: 200px;
 	border: 2px solid black;
 	border-radius: 50%;
 }
@@ -24,29 +24,32 @@ body {
 .second-hand {
   position: absolute;
   background-color: black;
-  transform-origin: 50% 100%;
+
   transform: rotate(90deg); /* Drehung um 90 Grad, um am unteren Rand zu starten */
 }
 
 .hour-hand {
   width: 8px;
   height: 60px;
-  top: calc(50% - 60px);
-  left: 25%;
+  top: calc(50% - 58px);
+  left: 49%;
+	transform-origin: 50% 100%;
 }
 
 .min-hand {
-  width: 4px;
-  height: 80px;
-  top: calc(50% - 80px);
-  left: 30%;
+  	width: 4px;
+  	height: 80px;
+ 	top: calc(50% - 80px);
+  	left: 34%;
+	transform-origin: 50% 100%;
 }
 
 .second-hand {
-  width: 2px;
-  height: 90px;
-  top: calc(50% - 90px);
-  left: 50%;
+  	width: 2px;
+  	height: 90px;
+  	top: calc(50% - 90px);
+  	left: 50%;
+	transform-origin: 50% 100%;
 }
 
 .inner-clock-face {
@@ -58,4 +61,43 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+.marking-one{
+	position: absolute;
+		background-color: black;
+		width: 2px;
+		height: 10px;
+		top: 0.1%;
+		left: 50%;
+		transform-origin: 50% 100%;
+}
+.marking-two {
+	position: absolute;
+	background-color: black;
+	width: 2px;
+	height: 10px;
+	top: 45%;
+	left: 95%;
+	transform-origin: 50% 100%;
+	transform: rotate(90deg);
+}
+.marking-three {
+	position: absolute;
+	background-color: black;
+	width: 2px;
+	height: 10px;
+	top: 90%;
+	left: 50%;
+	transform-origin: 50% 100%;
+	transform: rotate(180deg);
+}
+.marking-four {
+	position: absolute;
+	background-color: black;
+	width: 2px;
+	height: 10px;
+	top: 45%;
+	left: 4.9%;
+	transform-origin: 50% 100%;
+	transform: rotate(270deg);
 }
