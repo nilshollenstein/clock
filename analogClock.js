@@ -35,6 +35,8 @@ updateClock();
 /*
 Part of the code which chooses to use Day/Nightmode
 */
+// Again get Local Time, so that we can use it outside of the Function
+let date = new Date();
 // define hourDayOrNight to choose Day/Nightmode
 let hourDayOrNight = date.getHours();
 
