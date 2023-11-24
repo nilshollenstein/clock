@@ -1,10 +1,12 @@
 # clock
 
-#Dieses Projekt nutzt HTML, CSS und JavaScript um eine Webseite mit einer Uhr welche die Aktuelle Zeit anzeigt.
+This project creates a website that displays the time in seconds, minutes and hours using HTML, CSS and Javascript. It is the time of the place that your device thinks that you are in.
 
-#Funktionen
-Zeigt die aktuelle Uhrzeit in Stunden, Minuten und Sekunden an.
-Reagiert auf verschiedene Bildschirmgrössen und passt sich daran an.
-Verwendung
-Laden Sie alle Dateien auf einen Webserver oder öffnen Sie index.html-Datei in einem Webbrowser.
-Die Uhr sollte nun angezeigt werden und sich automatisch aktualisieren.
+Functions
+-It will always fit on your screen, no matter which device
+-It shows the time in seconds, minutes and hours
+
+How to use it
+
+1. Download all files. Open the HDMI file in your browser or upload it to a web server.
+2. Now you should see the clock. It should show the time.
