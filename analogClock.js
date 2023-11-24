@@ -1,3 +1,5 @@
+/*Function to let the clock turn*/
+
 // Define updateClock function
 function updateClock() {
   // Get current date and time
@@ -29,9 +31,16 @@ setInterval(updateClock, 1000);
 
 // start of the updateClock function
 updateClock();
+/*
+ ***************************************************************
+ */
 
+/*
+***************************************************
+Part of the code which chooses to use Day/Nightmode
+*/
 // define hourDayOrNight to choose Day/Nightmode
-let hourDayOrNight = 20; // date.getHours();
+let hourDayOrNight = date.getHours();
 
 //If to select day or night mode based on the time (accurate to the hour)
 if (hourDayOrNight >= 7 && hourDayOrNight <= 19) {
@@ -62,4 +71,3 @@ if (hourDayOrNight >= 7 && hourDayOrNight <= 19) {
     element.style.backgroundColor = "#ffffff";
   });
 }
-//array for the Months to chosse
