@@ -83,8 +83,9 @@
 
     /* Styling for the first marking */
     .marking-one {
-    	top: 0.55%;
+    	top: 1%;
     	left: 50%;
+		height: 14px;
     }
 
     /* Styling for the second marking */
