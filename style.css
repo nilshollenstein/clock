@@ -1,38 +1,60 @@
 
+html{
+	height: auto;
+}
+body{
+	position: center;
+}
 
 .outer-clock-face {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  border-width: 5px;
-  border-color: black;
-  border-style: solid;
-  position: relative;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	border-radius: 50%;
+	margin: auto;
+
+
 }
 
-.outer-clock-face::before,
-.outer-clock-face::after {
-  content: "";
-  position: absolute;
-  background-color: black;
-  height: 50%;
-  width: 2px; /* Breite der Linien */
-  top: 50%;
-  left: 50%;
-  transform-origin: 50% 100%;
-  transform: translate(-50%, -50%);
+.hour-hand,
+.min-hand,
+.second-hand {
+	position: absolute;
+	background-color: black;
+	transform-origin: 50% 100%;
 }
 
-.outer-clock-face::before {
-  transform: translate(-50%, -50%) rotate(120deg);
+.hour-hand {
+	width: 8px;
+	height: 60px;
+	top: 50%;
+	left: 50%;
+
 }
 
-.outer-clock-face::after {
-  transform: translate(-50%, -50%) rotate(240deg);
+.min-hand {
+	width: 4px;
+	height: 80px;
+	top: 50%;
+	left: 50%;
 }
-html{
-	height: 100%;
-			display: grid;
-				grid-template-columns: 1fr;
-				place-items: center;
+
+.second-hand {
+	width: 2px;
+	height: 90px;
+	top: 50%;
+	left: 50%;
+	
+}
+
+.inner-clock-face {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background-color: black;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
