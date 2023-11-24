@@ -22,3 +22,13 @@ setInterval(updateClock, 1000);
 
 // Initialer Aufruf, um die Uhrzeit sofort anzuzeigen
 updateClock();
+
+let hourDayorNight = date.getHours() % 24;
+
+if (hourDayorNight >= 7 && hourDayorNight <= 19) {
+  document.body.style.backgroundColor = "#ffffff"; // Daymode: White Background, Black Clock
+  document.documentElement.style.backgroundColor = "#000000";
+} else {
+  document.body.style.backgroundColor = "#000000"; // Nightmode: Black Background, White Clock
+  document.documentElement.style.backgroundColor = "#ffffff";
+}
