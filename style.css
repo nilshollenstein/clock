@@ -1,111 +1,108 @@
-html {
-	display: flex;
-	justify-content: center;
-}
+    html {
+    	display: flex;
+    	justify-content: center;
+    }
 
-body {
-	height: 100vh;
-	margin: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+    /* Styling for the body, setting height to 100% of the viewport and centering content */
+    body {
+    	height: 100vh;
+    	margin: 0;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    }
 
-.outer-clock-face {
-	position: relative;
-	width: 200px;
-	height: 200px;
-	border: 3px solid black;
-	border-radius: 50%;
-	
-}
+    /* Styling for the outer clock face container */
+    .outer-clock-face {
+    	position: relative;
+    	width: 200px;
+    	height: 200px;
+    	border: 3px solid black;
+    	border-radius: 50%;
+    }
 
-.inner-clock-face {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	background-color: black;
-	border-radius: 50%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
+    /* Styling for the inner circle of the clock face */
+    .inner-clock-face {
+    	position: absolute;
+    	width: 20px;
+    	height: 20px;
+    	background-color: black;
+    	border-radius: 50%;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+    }
 
+    /* Styling for hour, minute, and second hands of the clock */
+    .hour-hand,
+    .min-hand,
+    .second-hand {
+    	position: absolute;
+    	background-color: black;
+    	border-radius: 30%;
+    }
 
-.hour-hand,
-.min-hand,
-.second-hand {
-	position: absolute;
-	background-color: black;
-	border-radius: 30%;
+    /* Styling for the hour hand */
+    .hour-hand {
+    	width: 6px;
+    	height: 60px;
+    	top: calc(50% - 58px);
+    	left: 40%;
+    	transform-origin: 50% 100%;
+    }
 
-}
+    /* Styling for the minute hand */
+    .min-hand {
+    	width: 4px;
+    	height: 80px;
+    	top: calc(50% - 80px);
+    	left: 34%;
+    	transform-origin: 50% 100%;
+    }
 
-.hour-hand {
-	width: 6px;
-	height: 60px;
-	top: calc(50% - 58px);
-	left: 40%;
-	transform-origin: 50% 100%;
-}
+    /* Styling for the second hand */
+    .second-hand {
+    	width: 2px;
+    	height: 90px;
+    	top: calc(50% - 90px);
+    	left: 50%;
+    	transform-origin: 50% 100%;
+    }
 
-.min-hand {
-	width: 4px;
-	height: 80px;
-	top: calc(50% - 80px);
-	left: 34%;
-	transform-origin: 50% 100%;
-}
+    /* Styling for clock markings */
+    .marking-one,
+    .marking-two,
+    .marking-three,
+    .marking-four {
+    	position: absolute;
+    	background-color: black;
+    	width: 3px;
+    	height: 10px;
+    	transform-origin: 50% 100%;
+    }
 
-.second-hand {
-	width: 2px;
-	height: 90px;
-	top: calc(50% - 90px);
-	left: 50%;
-	transform-origin: 50% 100%;
-}
+    /* Styling for the first marking */
+    .marking-one {
+    	top: 0.55%;
+    	left: 50%;
+    }
 
+    /* Styling for the second marking */
+    .marking-two {
+    	top: 45%;
+    	left: -0.8%;
+    	transform: rotate(90deg);
+    }
 
+    /* Styling for the third marking */
+    .marking-three {
+    	top: 95%;
+    	left: 50%;
+    }
 
-.marking-one {
-	position: absolute;
-	background-color: black;
-	width: 3px;
-	height: 10px;
-	top: 0.55%;
-	left: 50%;
-	transform-origin: 50% 100%;
-}
-
-.marking-two {
-	position: absolute;
-	background-color: black;
-	width: 3px;
-	height: 10px;
-	top: 45%;
-	left: -0.8%;
-	transform-origin: 50% 100%;
-	transform: rotate(90deg);
-}
-
-.marking-three {
-	position: absolute;
-	background-color: black;
-	width: 3px;
-	height: 10px;
-	top: 95%;
-	left: 50%;
-	transform-origin: 50% 100%;
-}
-
-/* Viertelstundenmarkierungen */
-.marking-four {
-	position: absolute;
-	background-color: black;
-	width: 3px;
-	height: 10px;
-	top: 45%;
-	left: 100%;
-	transform-origin: 50% 100%;
-	transform: rotate(270deg);
-}
+    /* Styling for the fourth marking */
+    .marking-four {
+    	top: 45%;
+    	left: 100%;
+    	transform: rotate(270deg);
+    }
