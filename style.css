@@ -1,0 +1,38 @@
+
+
+.outer-clock-face {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  position: relative;
+}
+
+.outer-clock-face::before,
+.outer-clock-face::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 50%;
+  width: 2px; /* Breite der Linien */
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+  transform: translate(-50%, -50%);
+}
+
+.outer-clock-face::before {
+  transform: translate(-50%, -50%) rotate(120deg);
+}
+
+.outer-clock-face::after {
+  transform: translate(-50%, -50%) rotate(240deg);
+}
+html{
+	height: 100%;
+			display: grid;
+				grid-template-columns: 1fr;
+				place-items: center;
+}
