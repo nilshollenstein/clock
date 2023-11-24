@@ -32,9 +32,21 @@ updateClock();
 
 let hourDayorNight = date.getHours();
 
+//If to select day or night mode based on the time (accurate to the hour)
 if (hourDayorNight >= 7 && hourDayorNight <= 19) {
   document.querySelector("html").style.backgroundColor = "#ffffff"; // Daymode: White Background, Black Clock
-  document.querySelector("html").style.color = "#000000";
+
+  //color inner and outer face
+  document.querySelector(".inner-clock-face").style.backgroundColor = "#000000";
+  document.querySelector(".outer-clock-face").style.borderColor = "#000000";
+  //color markings and hands
+
+  document.querySelectorAll(".marking").forEach((element) => {
+    element.style.backgroundColor = "#000000";
+  });
+  document.querySelectorAll(".hand").forEach((element) => {
+    element.style.backgroundColor = "#000000";
+  });
 } else {
   document.querySelector("html").style.backgroundColor = "#000000"; // Nightmode: Black Background, White Clock
   //color inner and outer face
