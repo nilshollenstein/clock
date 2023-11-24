@@ -31,7 +31,7 @@ setInterval(updateClock, 1000);
 updateClock();
 
 // define hourDayOrNight to choose Day/Nightmode
-let hourDayOrNight = date.getHours();
+let hourDayOrNight = 20; // date.getHours();
 
 //If to select day or night mode based on the time (accurate to the hour)
 if (hourDayOrNight >= 7 && hourDayOrNight <= 19) {
@@ -51,15 +51,15 @@ if (hourDayOrNight >= 7 && hourDayOrNight <= 19) {
 } else {
   document.querySelector("html").style.backgroundColor = "#000000"; // Nightmode: Black Background, White Clock
   //color inner and outer face
-  document.querySelector(".inner-clock-face").style.backgroundColor = "#fff";
-  document.querySelector(" ").style.borderColor = "#ffffff";
+  document.querySelector(".inner-clock-face").style.backgroundColor = "#ffffff";
+  document.querySelector(".outer-clock-face ").style.borderColor = "#ffffff";
   //color markings and hands
 
   document.querySelectorAll(".marking").forEach((element) => {
-    element.style.backgroundColor = "#fff";
+    element.style.backgroundColor = "#ffffff";
   });
   document.querySelectorAll(".hand").forEach((element) => {
-    element.style.backgroundColor = "#fff";
+    element.style.backgroundColor = "#ffffff";
   });
 }
 //array for the Months to chosse
