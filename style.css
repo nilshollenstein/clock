@@ -1,51 +1,52 @@
-
-html{
-	height: auto;
+html {
+	display: flex;
+	justify-content: center;
 }
-body{
-	position: center;
+
+body {
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .outer-clock-face {
 	position: relative;
-	width: 200px;
-	height: 200px;
+	width: 60vh;
+	height: 60vh;
 	border: 2px solid black;
 	border-radius: 50%;
-	margin: auto;
-
-
 }
 
 .hour-hand,
 .min-hand,
 .second-hand {
-	position: absolute;
-	background-color: black;
-	transform-origin: 50% 100%;
+  position: absolute;
+  background-color: black;
+  transform-origin: 50% 100%;
+  transform: rotate(90deg); /* Drehung um 90 Grad, um am unteren Rand zu starten */
 }
 
 .hour-hand {
-	width: 8px;
-	height: 60px;
-	top: 50%;
-	left: 50%;
-
+  width: 8px;
+  height: 60px;
+  top: calc(50% - 60px);
+  left: 25%;
 }
 
 .min-hand {
-	width: 4px;
-	height: 80px;
-	top: 50%;
-	left: 50%;
+  width: 4px;
+  height: 80px;
+  top: calc(50% - 80px);
+  left: 30%;
 }
 
 .second-hand {
-	width: 2px;
-	height: 90px;
-	top: 50%;
-	left: 50%;
-	
+  width: 2px;
+  height: 90px;
+  top: calc(50% - 90px);
+  left: 50%;
 }
 
 .inner-clock-face {
