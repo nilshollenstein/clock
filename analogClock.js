@@ -31,12 +31,8 @@ setInterval(updateClock, 1000);
 
 // start of the updateClock function
 updateClock();
-/*
- ***************************************************************
- */
 
 /*
-***************************************************
 Part of the code which chooses to use Day/Nightmode
 */
 // define hourDayOrNight to choose Day/Nightmode
@@ -49,6 +45,7 @@ if (hourDayOrNight >= 7 && hourDayOrNight <= 19) {
   //color inner and outer face
   document.querySelector(".inner-clock-face").style.backgroundColor = "#000000";
   document.querySelector(".outer-clock-face").style.borderColor = "#000000";
+
   //color markings and hands
 
   document.querySelectorAll(".marking").forEach((element) => {
@@ -62,6 +59,7 @@ if (hourDayOrNight >= 7 && hourDayOrNight <= 19) {
   //color inner and outer face
   document.querySelector(".inner-clock-face").style.backgroundColor = "#ffffff";
   document.querySelector(".outer-clock-face ").style.borderColor = "#ffffff";
+
   //color markings and hands
 
   document.querySelectorAll(".marking").forEach((element) => {
