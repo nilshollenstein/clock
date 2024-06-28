@@ -10,6 +10,6 @@ Functions
 
 How to use it
 
-1. Download all files. Open the HDMI file in your browser or upload it to a web server.
+1. Download all files. Open the HTML file in your browser or upload it to a web server.
 2. Now you should see the clock. It should show the time.
 3. If you want to, you can change the Colors in the CSS/JavaScript Files to personalise it
